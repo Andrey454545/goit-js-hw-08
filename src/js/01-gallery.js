@@ -49,6 +49,6 @@ gallery.append(...items);
 
 // додавання затримки для опису зображення
 new SimpleLightbox('.gallery a', {
-    captionDetay: 250,
+    captionDelay: 250,
 });
 
