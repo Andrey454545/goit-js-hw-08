@@ -1,8 +1,10 @@
-import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
+
+//встановити саму бібліотеку simplelightbox через npm (npm install simplelightbox)
 
 // пошук елементів у галереї,
 // а галереї на сторонці
@@ -41,7 +43,6 @@ galleryItems.forEach((element) => {
 
     galleryLink.append(galleryImg);     // вставлення зображення в посилання 
     items.push(galleryItem);               // вставлення посилання в масив елементів
-
 });
 
 // додавання створених елементів в галерею через розпилення
