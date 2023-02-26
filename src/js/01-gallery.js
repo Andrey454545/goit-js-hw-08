@@ -42,7 +42,7 @@ galleryItems.forEach((element) => {
     galleryImg.alt = element.description;
 
     galleryLink.append(galleryImg);     // вставлення зображення в посилання 
-    items.push(galleryItem);               // вставлення посилання в масив елементів
+    items.push(galleryLink);               // вставлення посилання в масив елементів
 });
 
 // додавання створених елементів в галерею через розпилення
