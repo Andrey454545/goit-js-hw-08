@@ -1,5 +1,5 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
@@ -28,20 +28,20 @@ galleryItems.forEach((element) => {
 
     // створення тегу зображення
     // створення елемента з імям img повертає посилання 
-    const galleryImg = document.createElement('img');
+    const galleryImage = document.createElement('img');
 
     // додавання класа до тега
-    galleryImg.classList.add('gallery__image'); 
+    galleryImage.classList.add('gallery__image'); 
     // додавання малого зображення з властивості обекта ./gallery-items.js
-    galleryImg.src = element.preview;
+    galleryImage.src = element.preview;
 
     // додавання атрибуту title з властивості обекта ./gallery-items.js
-    galleryImg.setAttribute("title", element.description);
+    galleryImage.setAttribute("title", element.description);
 
     // додавання тектсу для alt з властивості обекта ./gallery-items.js
-    galleryImg.alt = element.description;
+    galleryImage.alt = element.description;
 
-    galleryLink.append(galleryImg);     // вставлення зображення в посилання 
+    galleryLink.append(galleryImage);     // вставлення зображення в посилання 
     items.push(galleryLink);               // вставлення посилання в масив елементів
 });
 
